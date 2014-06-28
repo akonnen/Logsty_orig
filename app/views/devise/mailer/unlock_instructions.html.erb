@@ -1,0 +1,6 @@
+<p>Hello, %= @resource.email %>!</p>
+
+<p>This is Logsty again! No, we aren't stalking you. It seems somebody has tried to log into your account with us a bunch of times and we had to lock it to keep the evil liches from causing trouble while imitating you. If it was you, we're really sorry this happened. If it wasn't though, well... At least we protected it! But we digress. The link below should unlock your account right up for you. If you have any problems, feel free to send us a shout out on our contact form and we'll be more than happy to help. Thank you for understanding!</p>
+
+<p><%= link_to 'Unlock my account', unlock_url(@resource, :unlock_token => @resource.unlock_token) %></p>
+
